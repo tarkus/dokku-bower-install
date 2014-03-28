@@ -8,7 +8,7 @@ BOWERSCRIPT="
 cd /app
 PATH=\$PATH:/app/vendor/node/bin
 if [[ -f ./bower.json ]]; then
-	npm install -g bower && bower install --allow-root
+	npm install --save bower && ./node_modules/bower/bin/bower install --allow-root
 fi
 "
 
